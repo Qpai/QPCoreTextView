@@ -1,0 +1,2 @@
+# QPCoreTextView
+RichTextView
