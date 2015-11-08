@@ -43,10 +43,10 @@
         return;
     }
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    __weak typeof(self) weakSelf = self;
+    
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        __strong typeof(weakSelf) strongSelf = weakSelf;
+        
         
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"emoji" ofType:@"plist"];
         NSArray *emojiArray = [NSArray arrayWithContentsOfFile:plistPath];
@@ -59,7 +59,7 @@
             
             NSAttributedString *attr = [QPCoreTextView appendAttributedString:nil withStringStyle:textStyle];
             
-            QPCoreTextImageStringStyle *imageStyle = [[QPCoreTextImageStringStyle alloc] init];
+            QPCustomCoreTextImageStringStyle *imageStyle = [[QPCustomCoreTextImageStringStyle alloc] init];
             imageStyle.imageName = @"001[憨笑]";
             
             attr = [QPCoreTextView appendAttributedString:attr withImageStringStyle:imageStyle];
@@ -109,19 +109,20 @@
             
             model = [QPCoreTextView preLoadCoreTextView:model];
             
-            [strongSelf.dataArray addObject:model];
+            
+            [self.dataArray addObject:model];
+            
             
             
         }
 
         
-        [QPCacheIntance share].array = strongSelf.dataArray;
+        [QPCacheIntance share].array = self.dataArray;
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            __strong typeof(weakSelf) strongSelf = weakSelf;
-            if (strongSelf) {
-                [strongSelf setupTableView];
-            }
+            
+            [self setupTableView];
+            
         });
         
     });

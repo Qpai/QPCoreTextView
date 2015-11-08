@@ -19,8 +19,8 @@
 
 
 @implementation QPCoreTextImageStringStyle
-
-
+@synthesize imageName = _imageName;
+@synthesize imageSize = _imageSize;
 
 
 static void RunDelegateDeallocCallback( void* refCon ){

@@ -9,34 +9,18 @@
 #import <Foundation/Foundation.h>
 #import <CoreText/CoreText.h>
 @interface QPCoreTextImageStringStyle : NSObject
+{
+@protected
+    NSString *_imageName;
+    CGSize _imageSize;
+}
 
 @property (nonatomic,copy) NSString *imageName;
-
-/**
- *  图片所在的行
- */
-//@property (nonatomic,assign) CTLineRef lineRef;
-
-
-/**
- *  图片所在的行开始的点位
- */
-//@property (nonatomic,assign) CGPoint linePoint;
 
 /**
  *  图片的size
  */
 @property (nonatomic,assign,readonly) CGSize imageSize;
-
-/**
- *  图片在当前lineRef中的下行
- */
-//@property (nonatomic,assign) CGFloat imageDescent;
-
-/**
- *  相对于当前lineRef起始点的偏移量
- */
-//@property (nonatomic,assign) CGFloat offsetFromLineOriginX;
 
 /**
  *  图片的Rect

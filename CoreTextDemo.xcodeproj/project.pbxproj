@@ -10,7 +10,6 @@
 		6E30D9AD1BBC167E00B7F159 /* QPMainDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E30D9AC1BBC167E00B7F159 /* QPMainDataModel.m */; };
 		6E6951191BB4ED8B00661D91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6951181BB4ED8B00661D91 /* main.m */; };
 		6E69511C1BB4ED8B00661D91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E69511B1BB4ED8B00661D91 /* AppDelegate.m */; };
-		6E69511F1BB4ED8B00661D91 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E69511E1BB4ED8B00661D91 /* MasterViewController.m */; };
 		6E6951221BB4ED8B00661D91 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6951211BB4ED8B00661D91 /* DetailViewController.m */; };
 		6E6951271BB4ED8B00661D91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E6951261BB4ED8B00661D91 /* Images.xcassets */; };
 		6E69512A1BB4ED8B00661D91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6951281BB4ED8B00661D91 /* LaunchScreen.xib */; };
@@ -207,8 +206,6 @@
 		6E6951181BB4ED8B00661D91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E69511A1BB4ED8B00661D91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6E69511B1BB4ED8B00661D91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6E69511D1BB4ED8B00661D91 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		6E69511E1BB4ED8B00661D91 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		6E6951201BB4ED8B00661D91 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		6E6951211BB4ED8B00661D91 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		6E6951261BB4ED8B00661D91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -446,8 +443,6 @@
 				6E6951481BB8305F00661D91 /* Emoji */,
 				6E69511A1BB4ED8B00661D91 /* AppDelegate.h */,
 				6E69511B1BB4ED8B00661D91 /* AppDelegate.m */,
-				6E69511D1BB4ED8B00661D91 /* MasterViewController.h */,
-				6E69511E1BB4ED8B00661D91 /* MasterViewController.m */,
 				6E6951201BB4ED8B00661D91 /* DetailViewController.h */,
 				6E6951211BB4ED8B00661D91 /* DetailViewController.m */,
 				6E6951261BB4ED8B00661D91 /* Images.xcassets */,
@@ -962,7 +957,6 @@
 				6EFBD6EB1BBBE97500704E09 /* QPMainVCCell.m in Sources */,
 				6E6951421BB51E2E00661D91 /* QPCoreTextView.m in Sources */,
 				6E6952911BBA388900661D91 /* QPCoreTextBaseStringStyle.m in Sources */,
-				6E69511F1BB4ED8B00661D91 /* MasterViewController.m in Sources */,
 				6EFC94201BEE223400A88782 /* QPCustomCoreTextImageStringStyle.m in Sources */,
 				6EFC941A1BEDC5F400A88782 /* QPCacheIntance.m in Sources */,
 				6E6951191BB4ED8B00661D91 /* main.m in Sources */,

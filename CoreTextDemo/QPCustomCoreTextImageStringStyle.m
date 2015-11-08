@@ -50,6 +50,10 @@ static void RunDelegateDeallocCallback( void* refCon ){
     return callbacks;
 }
 
-
+- (void)setImageName:(NSString *)imageName
+{
+    _imageName = imageName;
+    _imageSize = CGSizeMake(29, 29);
+}
 
 @end
