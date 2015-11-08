@@ -4,7 +4,7 @@
 //
 //  QPCoreTextView 数据对象
 //
-//  应用于预加载过程，可以将这个对象序列化，缓存于本地，以提升显示效率
+//  应用于预加载过程
 //
 //
 //
@@ -14,7 +14,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface QPCoreTextData : NSObject<NSCoding>
+@interface QPCoreTextData : NSObject
 
 /**
  *  可变属性字符串
